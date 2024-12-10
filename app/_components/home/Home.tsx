@@ -2,8 +2,6 @@ import React from 'react'
 import TypeWriter from '../common/TypeWriter'
 import Button from '../common/Button'
 import { IoIosArrowForward } from "react-icons/io";
-import Image from 'next/image';
-import me from '@/public/image/computer.png'
 function Home() {
   return (
     <div className='bg-[#FF9064] h-[91vh]' id='home'>
@@ -18,7 +16,6 @@ function Home() {
                     <Button style='w-30 m-auto sm:m-0 sm:text-xl px-5 py-3 rounded bg-black text-white hover:text-[#FF9064] hover:bg-white transition duration-300 ease-in-out flex gap-3 items-center'>HIRE ME <span className='animate-pulse'><IoIosArrowForward /></span></Button>
             </div>
             <div data-aos="fade-left" className='bg-heroBackground bg-cover bg-center w-full h-[64vh] md:w-1/3 sm:h-[91vh]'>
-                {/* <Image src={me} alt='phote'/> */}
             </div>
         </div>
     </div>

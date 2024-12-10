@@ -5,6 +5,7 @@ import Home from './_components/home/Home'
 import About from './_components/about/About'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Services from './_components/services/Services'
 
 function page() {
   useEffect(()=>{
@@ -15,6 +16,7 @@ function page() {
       <Header />
       <Home />
       <About />
+      <Services />
     </div>
   )
 }
