@@ -25,9 +25,9 @@ function Page() {
       <Header />
       <Home />
       <About />
-     {/*  <Services />
+      <Services />
       <Portfolio />
-      <Banner />
+      {/* <Banner />
       <Blogs />
       <Skills />
       <Contact />

@@ -8,20 +8,20 @@ function Services() {
     <div className="py-10 lg:py-20" id="services">
       <div className="container">
         <div className="text-center" data-aos="flip-left">
-          <p className="uppercase font-bold text-orange-800">Services</p>
-          <h2 className="text-2xl sm:text-5xl font-bold text-gray-800 my-3">
+          <p className="uppercase text-sm font-bold text-orange-600">Services</p>
+          <h2 className="text-xl md:text-3xl lg:text-5xl font-semibold text-gray-800 my-2">
             This is My Expertise, The
             <br />
             Services I&apos;ll Provide My Clients
           </h2>
         </div>
-        <div className="p-10 lg:flex justify-between gap-x-20">
+        <div className="px-5 md:grid grid-cols-2 lg:flex justify-between gap-x-20">
           <div
-            className="px-5 mt-10 py-5 shadow-md shadow-gray-300"
+            className="mt-10 p-5 shadow-md shadow-gray-200 rounded-md"
             data-aos="fade-up"
           >
             <div>
-              <Image className="w-1/2 mx-auto" src={ui} alt="ui design" />
+              <Image className="w-1/3 mx-auto" src={ui} alt="ui design" />
             </div>
             <div className="text-center">
               <h3 className="font-bold text-orange-800 mb-5">UI & UX Design</h3>
@@ -32,7 +32,7 @@ function Services() {
             </div>
           </div>
           <div
-            className="p-5 mt-10 shadow-md shadow-gray-300"
+            className="p-5 mt-10 shadow-md shadow-gray-200 rounded-md"
             data-aos="fade-up"
             data-aos-duration="1500"
           >
@@ -50,7 +50,7 @@ function Services() {
             </div>
           </div>
           <div
-            className="p-5 mt-10 shadow-md shadow-gray-300"
+            className="p-5 mt-10 shadow-md shadow-gray-200 rounded-md"
             data-aos="fade-up"
             data-aos-duration="2000"
           >
