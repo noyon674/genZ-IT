@@ -1,7 +1,6 @@
 import React from 'react'
 import {blogs} from '@/app/data'
 import Image from 'next/image'
-import img from '@/public/image/food.jpg'
 import Link from 'next/link'
 
 function Blogs() {

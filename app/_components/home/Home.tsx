@@ -25,7 +25,7 @@ function Home() {
         </div>
         <div
           data-aos="fade-left"
-          className="basis-1/3 bg-heroBackground h-[64vh] mt-5 md:mt-0 md:h-[91vh] bg-center md:bg-cover"
+          className="basis-1/3 bg-heroBackground h-[64vh] bg-no-repeat mt-4 md:mt-0 md:h-[91vh] bg-center md:bg-cover"
         ></div>
       </div>
     </div>

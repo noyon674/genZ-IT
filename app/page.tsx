@@ -24,8 +24,8 @@ function Page() {
     <>
       <Header />
       <Home />
-      {/* <About />
-      <Services />
+      <About />
+     {/*  <Services />
       <Portfolio />
       <Banner />
       <Blogs />

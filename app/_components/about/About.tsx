@@ -3,28 +3,24 @@ import computer from "@/public/image/about.jpg";
 
 function About() {
   return (
-    <div id="about" className="py-10 lg:pt-28">
-      <div className="container">
+    <div id="about" className="">
+      <div className="container py-16">
         <h2
-          className="text-2xl sm:text-4xl md:text-5xl text-gray-700 text-center font-bold"
-          data-aos="fade-up"
-          data-aos-duration="2000"
+          className="text-center text-2xl mb-5"
         >
           About ME
         </h2>
-        <div className="lg:flex justify-around lg:gap-x-10 py-10">
-          <div className="basis-1/2 mb-5" data-aos="fade-up">
-            <Image className="w-[40]" src={computer} alt="computer" />
+        <div className="">
+          <div className="px-5">
+            <Image className="rounded-lg" src={computer} alt="computer" />
           </div>
           <div
-            className="basis-1/2 px-5 sm:px-0"
-            data-aos="fade-up"
-            data-aos-duration="2000"
+            className="px-5"
           >
-            <h2 className="text-2xl font-bold text-gray-800 mb-5 sm:text-3xl">
+            <h2 className="text-lg font-semibold mb-3">
               My Story
             </h2>
-            <p className="text-lg sm:text-xl sm:text-gray-900">
+            <p className="">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
               reprehenderit vel, voluptates perferendis quod modi nihil nemo,
               dolore distinctio velit accusamus itaque dolorum nobis. Quisquam
@@ -32,11 +28,11 @@ function About() {
               nulla nobis aspernatur cumque aut, maiores accusamus praesentium
               sequi ratione quos pariatur.
             </p>
-            <h2 className="text-2xl font-bold text-gray-800 my-5 sm:text-[#FF9064]">
+            <h2 className="text-xl font-semibold text-gray-800 my-3">
               I Do Web Design & Development since I was in the First Semester of
               University.
             </h2>
-            <p className="text-lg sm:text-xl sm:text-gray-900">
+            <p className="">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
               laboriosam nulla vitae sunt esse minus optio autem unde voluptatum
               enim!

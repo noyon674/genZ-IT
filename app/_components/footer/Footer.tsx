@@ -6,7 +6,6 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { BsMedium } from "react-icons/bs";
 import { SiLeetcode } from "react-icons/si";
-import Button from '../common/Button';
 
 function Footer() {
   return (
