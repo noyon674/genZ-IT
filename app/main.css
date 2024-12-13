@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.overlay{
+    transition: height .3s;
+}
+.box:hover .overlay{
+    height: 100%;
+    transition: .3s ease;
+    cursor: pointer;
+}

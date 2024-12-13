@@ -16,9 +16,12 @@ export default {
         foreground: "var(--foreground)",
       },
       backgroundImage:{
-        heroBackground:"url('/image/myself.png')"
+        heroBackground:"url('/image/myself.png')",
+        bannerBackground:"url('/image/banner.jpg')"
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/forms"),
+  ],
 } satisfies Config;
