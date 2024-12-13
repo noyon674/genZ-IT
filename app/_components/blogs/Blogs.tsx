@@ -10,17 +10,17 @@ function Blogs() {
         }else return str
     }
   return (
-    <div id='blogs' className='px-10 lg:pt-20'>
-        <div className='container py-20'>
+    <div id='blogs' className='lg:pt-20'>
+        <div className='container py-20 px-5'>
             <div className='text-center'>
                 <p className='font-bold text-xs sm:text-sm uppercase text-orange-800'>our blogs</p>
                 <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800'>Recent From Blogs</h2>
             </div>
-            <div className='flex flex-col sm:grid sm:grid-cols-2 sm:gap-14 lg:grid-cols-4 gap-y-10 lg:mt-20 mt-10'>
+            <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 md:gap-7 lg:gap-10 gap-y-5 mt-10'>
                 {
                     blogs.map(item=>(
                         <div key={item.id} className='shadow-md shadow-gray-200 rounded-md pb-2' data-aos={item.id % 2 == 0 ? "zoom-in" : "flip-left"} >
-                            <div className='relative h-[40vh]'>
+                            <div className='relative h-[30vh] md:h-[50vh] lg:h-[40vh]'>
                                 <Image src={item.image} fill alt='photo' className='rounded-md rounded-b-none'/>
                             </div>
                             <div className='p-5'>

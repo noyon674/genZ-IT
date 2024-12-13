@@ -9,9 +9,9 @@ import { SiLeetcode } from "react-icons/si";
 
 function Footer() {
   return (
-    <div className='bg-black text-white pt-32 pb-5'>
+    <div className='bg-black text-white pt-32'>
       <div className='container flex flex-col px-5 gap-y-5 md:flex-row md:items-center md:justify-around'>
-        <div className='md:basis-72' data-aos="fade-right">
+        <div className='md:basis-72' data-aos="zoom-in">
             <div>
               <Link href="">
                   <h1 className="text-2xl sm:text-4xl font-bold text-orange-700 mb-3">
@@ -30,14 +30,16 @@ function Footer() {
               
           </div>
         </div>
-        <div className='flex justify-between md:flex-col md:gap-y-3' data-aos="fade-left">
+        <div className='flex justify-between md:flex-col md:gap-y-3' data-aos="zoom-in">
           <button className='lg:px-10 px-5 py-2 border-2 rounded-full text-white transition-all hover:text-orange-500 lg:text-xl'>Download CV</button>
           <button className='lg:px-10 px-5 py-2 bg-orange-600 rounded-full transition-all text-white hover:bg-orange-700 lg:text-xl'>Let&apos;s Talk</button>
         </div>
       </div>
       <div className='mt-10'>
         <hr />
-        <p className='text-center mt-5 font-semibold' data-aos="fade up">Copyright ©2024 All rights reserved | This template is made with <span className='text-orange-500'>Noyon</span></p>
+        <p className='text-center py-10'>
+        Copyright ©2024 All rights reserved | This template is made with <span className='text-orange-500'>Noyon</span>
+        </p>
       </div>
     </div>
   )

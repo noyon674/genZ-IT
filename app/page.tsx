@@ -27,11 +27,11 @@ function Page() {
       <About />
       <Services />
       <Portfolio />
-      {/* <Banner />
+      <Banner />
       <Blogs />
       <Skills />
-      <Contact />
-      <Footer /> */}
+     <Contact />
+     <Footer /> 
     </>
   )
 }

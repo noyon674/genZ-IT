@@ -216,3 +216,27 @@ export const skillsIcon = [
     },
 
 ]
+
+export const clients=[
+    {
+        id: 1,
+        img: "image/client.png",
+        number: 100,
+        blurImage: 'data:image/jpeg;base64,/yourBase64ImageString',
+        smapleText: "Happy Customers"
+    },
+    {
+        id: 2,
+        img: "image/files.png",
+        number: 80,
+        blurImage: 'data:image/jpeg;base64,/yourBase64ImageString',
+        smapleText: "Project completed"
+    },
+    {
+        id: 3,
+        img: "image/coffee2.png",
+        number: 165,
+        blurImage: 'data:image/jpeg;base64,/yourBase64ImageString',
+        smapleText: "Cups of coffee"
+    },
+]

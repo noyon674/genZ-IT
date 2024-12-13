@@ -10,89 +10,74 @@ import "swiper/css";
 import { skillsIcon } from "@/app/data";
 
 function Skills() {
-  const breakPoint = {
-    lg: {previewSlide: 6, design: "lg:flex items-center hidden lg:block"},
-    md: {previewSlide: 3, design: "md:flex items-center hidden md:block lg:hidden"},
-    sm: {previewSlide: 2, design: "flex items-center sm:hidden"},
-  }
   return (
-    <div id="skills">
-      <h1 className="text-6xl text-gray-800 text-center my-10">Skills</h1>
-      {/* <div className={`bg-gray-900 h-56 lg:flex items-center`}>
-        <div className="container">
+    <div id="skills" className="py-10">
+      <h1 className="text-center text-2xl font-semibold mb-10">Skills</h1>
+      <div className="container">
+        <div className="px-5 sm:hidden">
           <Swiper
-            // install Swiper modules
+            modules={[Autoplay]}
+            spaceBetween={50}
+            slidesPerView={2}
+            autoplay={{delay:2000}}
+            loop
+            data-aos="fade-up"
+          >
+            {
+              skillsIcon.map(item=>(
+                <SwiperSlide key={item.id}>
+                  <div className="h-32 rounded-lg bg-[#48CEF6] flex flex-col justify-center items-center">
+                    <span className="text-4xl text-[#001D48]">{item.icon}</span>
+                    <span>{item.name}</span>
+                  </div>
+                </SwiperSlide>
+              ))
+            }
+          </Swiper>
+        </div>
+        <div className="px-5 hidden sm:block lg:hidden">
+          <Swiper
+            modules={[Autoplay]}
+            spaceBetween={50}
+            slidesPerView={3}
+            autoplay={{delay:2000}}
+            loop
+            data-aos="fade-up"
+          >
+            {
+              skillsIcon.map(item=>(
+                <SwiperSlide key={item.id}>
+                  <div className="h-32 rounded-lg bg-[#48CEF6] flex flex-col justify-center items-center">
+                    <span className="text-4xl text-[#001D48]">{item.icon}</span>
+                    <span>{item.name}</span>
+                  </div>
+                </SwiperSlide>
+              ))
+            }
+          </Swiper>
+        </div>
+        <div className="hidden lg:block">
+          <Swiper
             modules={[Autoplay]}
             spaceBetween={50}
             slidesPerView={6}
-            autoplay
-          >
-            {skillsIcon.map((item) => {
-              return (
-                <SwiperSlide key={item.id}>
-                  <div className="flex flex-col gap-y-2" data-aos="flip-left">
-                    <span className="lg:text-6xl text-[#17B6E7]">{item.icon}</span>
-                    <span className="text-white text-sm font-bold">{item.name}</span>
-                  </div>
-                </SwiperSlide>
-              );
-            })}
-            <SwiperSlide>
-            </SwiperSlide>
-          </Swiper>
-        </div>
-      </div> */}
-      <div className={`bg-gray-900 h-56 flex items-center`}>
-        <div className="container">
-          <Swiper
-            // install Swiper modules
-            modules={[Autoplay]}
-            spaceBetween={50}
-            slidesPerView={breakPoint.sm.previewSlide}
+            autoplay={{delay:2000}}
             loop
-            autoplay
+            data-aos="fade-up"
           >
-            {skillsIcon.map((item) => {
-              return (
+            {
+              skillsIcon.map(item=>(
                 <SwiperSlide key={item.id}>
-                  <div className="flex flex-col gap-y-2">
-                    <span className="text-5xl text-[#17B6E7]">{item.icon}</span>
-                    <span className="text-white text-sm font-bold">{item.name}</span>
+                  <div className="h-40 rounded-lg bg-[#48CEF6] flex flex-col justify-center items-center">
+                    <span className="text-6xl text-[#001D48]">{item.icon}</span>
+                    <span className="font-bold">{item.name}</span>
                   </div>
                 </SwiperSlide>
-              );
-            })}
-            <SwiperSlide>
-            </SwiperSlide>
+              ))
+            }
           </Swiper>
         </div>
       </div>
-      {/* <div className= {`bg-gray-900 h-56 ${breakPoint.md.design}`}>
-        <div className="container">
-          <Swiper
-            // install Swiper modules
-            modules={[Autoplay]}
-            spaceBetween={50}
-            slidesPerView={breakPoint.md.previewSlide}
-            loop
-            autoplay
-            className=""
-          >
-            {skillsIcon.map((item) => {
-              return (
-                <SwiperSlide key={item.id}>
-                  <div className="flex flex-col gap-y-2">
-                    <span className="text-6xl text-[#17B6E7]">{item.icon}</span>
-                    <span className="text-white text-sm font-bold">{item.name}</span>
-                  </div>
-                </SwiperSlide>
-              );
-            })}
-            <SwiperSlide>
-            </SwiperSlide>
-          </Swiper>
-        </div>
-      </div> */}
     </div>
   );
 }
