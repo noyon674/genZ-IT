@@ -24,14 +24,14 @@ function Page() {
     <>
       <Header />
       <Home />
-      {/* <About />
+      <About />
       <Services />
       <Portfolio />
       <Banner />
       <Blogs />
       <Skills />
      <Contact />
-     <Footer />  */}
+     <Footer /> 
     </>
   )
 }

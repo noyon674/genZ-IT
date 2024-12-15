@@ -29,33 +29,33 @@ function Contact() {
                 <Image src={map} alt='map' className='rounded-md'blurDataURL='data:image/jpeg;base64,/yourBase64ImageString'/>
                 </div>
                 <div className=' rounded-lg basis-3/5' data-aos="zoom-in">
-                    <form action="">
+                    <form action="https://formspree.io/f/mgvejewd" method='POST'>
                         <div className='flex flex-col justify-between items-center gap-y-3 lg:flex-row lg:gap-x-5'>
                             <div className='w-full'>
                                 <label className='w-full text-gray-500 lg:text-xl' htmlFor="fname">First Name<span className='text-[#17B6e7] font-bold'>*</span></label><br />
-                                <input className='w-full h-10 rounded-md mt-2 pl-3 outline-none ' type="text" id='fname'/>
+                                <input className='w-full h-10 rounded-md mt-2 pl-3 outline-none ' type="text" id='fname' name='First Name'/>
                             </div>
                             <div className='w-full'>
                                 <label className='w-full text-gray-500 lg:text-xl' htmlFor="lname">Last Name<span className='text-[#17B6e7] font-bold'>*</span></label><br />
-                                <input className='w-full h-10 rounded-md mt-2 pl-3 outline-none ' type="text" id='lname'/>
+                                <input className='w-full h-10 rounded-md mt-2 pl-3 outline-none ' type="text" id='lname' name='Last Name'/>
                             </div>
                         </div>
                         <div className='flex flex-col justify-between items-center gap-y-3 mt-3 lg:mt-5 lg:flex-row lg:gap-x-5'>
                             <div className='w-full'>
                                 <label className='w-full text-gray-500 lg:text-xl' htmlFor="email">Email<span className='text-[#17B6e7] font-bold'>*</span></label><br />
-                                <input className='w-full h-10 rounded-md mt-2 pl-3 outline-none ' type="email" id='email'/>
+                                <input className='w-full h-10 rounded-md mt-2 pl-3 outline-none ' type="email" id='email' name='Email'/>
                             </div>
                             <div className='w-full'>
                                 <label className='w-full text-gray-500 lg:text-xl' htmlFor="subject">Subject<span className='text-[#17B6e7] font-bold'>*</span></label><br />
-                                <input className='w-full h-10 rounded-md mt-2 pl-3 outline-none ' type="text" id='subject'/>
+                                <input className='w-full h-10 rounded-md mt-2 pl-3 outline-none ' type="text" id='subject' name='Subject'/>
                             </div>
                         </div>
                         <div className='mt-3'>
                         <label className='w-full text-gray-500 lg:text-xl' htmlFor="message">Message<span className='text-[#17B6e7] font-bold'>*</span></label><br />
-                        <textarea name="" id="message" rows={5} className='w-full h-30 lg:h-52 pt-1 rounded-md mt-2 pl-3 outline-none'></textarea>
+                        <textarea name="Message" id="message" rows={5} className='w-full h-30 lg:h-52 pt-1 rounded-md mt-2 pl-3 outline-none'></textarea>
                         </div>
                         <div className='mt-3 md:mt-5 lg:mt-10 lg:text-center'>
-                            <button className='w-full lg:w-1/2 bg-gray-800 py-3 lg:py5 lg:text-xl rounded-md text-white hover:text-gray-300' type='submit'>Send Message</button>
+                            <button  className='w-full lg:w-1/2 bg-gray-800 py-3 lg:py5 lg:text-xl rounded-md text-white hover:text-gray-300' type='submit'>Send Message</button>
                         </div>
                     </form>
                 </div>
