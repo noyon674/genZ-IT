@@ -17,6 +17,7 @@ const nabLinks = [
 
 function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [showMenu, setShowMenu] = useState(false)
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
@@ -29,9 +30,9 @@ function Header() {
     <div
     id="header"
       className={
-        scrolled
+        scrolled || showMenu
           ? "bg-[#f56b35] py-3 text-white fixed top-0 w-full shadow-md transation duration-500 ease-in-out z-10"
-          : "bg-[#FF9064] py-3 text-white fixed top-0 w-full z-10"
+          : "bg-[#FF9064] py-3 text-white fixed top-0 w-full z-10 transation duration-500 ease-in-out z-10"
       }
     >
       <div className="container flex justify-between items-center px-5 lg:px-0">
@@ -59,7 +60,7 @@ function Header() {
           </button>
         </div>
         <div className="lg:hidden">
-          <button className="text-3xl text-black"><AiOutlineMenu /></button>
+          <button className="text-3xl text-black" onClick={e=>setShowMenu(!showMenu)}><AiOutlineMenu /></button>
       </div>
       </div>
       {
