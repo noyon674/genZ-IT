@@ -4,7 +4,7 @@ import Button from "../common/Button";
 import { IoIosArrowForward } from "react-icons/io";
 function Home() {
   return (
-    <div className="bg-[#FF9064] h-[91vh]" id="home">
+    <div className="bg-[#FF9064] h-[91vh] mt-[55px] lg:mt-[9vh]" id="home">
       <div className="px-5 lg:px-0 container md:flex justify-between items-center">
         <div className=" pt-9 md:pt-0 lg:pt-0 basis-2/3" data-aos="fade-right">
           <p className="pb-5">

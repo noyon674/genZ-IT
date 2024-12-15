@@ -2,6 +2,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
+import { FaArrowTurnUp } from "react-icons/fa6";
+import { FaArrowUp } from "react-icons/fa";
 
 const nabLinks = [
   { name: "Home", href: "#" },
@@ -17,7 +19,7 @@ function Header() {
   const [scrolled, setScrolled] = useState(false);
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 70) {
+    if (window.scrollY > 50) {
       setScrolled(true);
     } else {
       setScrolled(false);
@@ -25,10 +27,11 @@ function Header() {
   });
   return (
     <div
+    id="header"
       className={
         scrolled
-          ? "bg-[#f56b35] py-5 text-white fixed top-0 w-full shadow-lg transation duration-500 ease-in-out z-10"
-          : "bg-[#FF9064] py-5 text-white"
+          ? "bg-[#f56b35] py-3 text-white fixed top-0 w-full shadow-md transation duration-500 ease-in-out z-10"
+          : "bg-[#FF9064] py-3 text-white fixed top-0 w-full z-10"
       }
     >
       <div className="container flex justify-between items-center px-5 lg:px-0">
@@ -59,7 +62,13 @@ function Header() {
           <button className="text-3xl text-black"><AiOutlineMenu /></button>
       </div>
       </div>
-
+      {
+        scrolled && <div className="fixed bottom-8 right-8 " data-aos="flip-left">
+        <Link href='#' className="text-xl bg-[#f56b35] h-14 w-14 flex justify-center items-center rounded-full transition duration-500 ease-in-out">
+        <FaArrowUp />
+        </Link>
+      </div>
+      }
     </div>
   );
 }
