@@ -1,8 +1,7 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-import { FaArrowTurnUp } from "react-icons/fa6";
 import { FaArrowUp } from "react-icons/fa";
 
 const nabLinks = [
@@ -19,13 +18,15 @@ function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [showMenu, setShowMenu] = useState(false)
 
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  });
+  useEffect(()=>{
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    });
+  }, [])
   return (
     <div
     id="header"
@@ -60,7 +61,7 @@ function Header() {
           </button>
         </div>
         <div className="lg:hidden">
-          <button className="text-3xl text-black" onClick={e=>setShowMenu(!showMenu)}><AiOutlineMenu /></button>
+          <button className="text-3xl text-black" onClick={()=>setShowMenu(!showMenu)}><AiOutlineMenu /></button>
       </div>
       </div>
       {
