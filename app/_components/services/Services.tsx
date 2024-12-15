@@ -1,7 +1,5 @@
 import Image from "next/image";
-import ui from "@/public/image/ui.png";
-import web from "@/public/image/web.png";
-import app from "@/public/image/android.png";
+import { services } from "@/app/data";
 
 function Services() {
   return (
@@ -16,57 +14,23 @@ function Services() {
           </h2>
         </div>
         <div className="px-5 md:grid grid-cols-2 lg:flex justify-between gap-x-20">
-          <div
+          {
+            services.map(item=>(
+              <div
             className="mt-10 p-5 shadow-md shadow-gray-200 rounded-md"
+            key={item.id}
             data-aos="fade-up"
           >
             <div>
-              <Image className="w-1/3 mx-auto" src={ui} alt="ui design" />
+              <Image width={300} height={300} className="w-1/3 mx-auto" blurDataURL={item.blurImage} src={item.img} alt="ui design" />
             </div>
             <div className="text-center">
-              <h3 className="font-bold text-orange-800 mb-5">UI & UX Design</h3>
-              <p className="text-lg text-slate-800">
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
-              </p>
+              <h3 className="font-bold text-orange-800 mb-5">{item.title}</h3>
+              <p className="text-lg text-slate-800">{item.desc}</p>
             </div>
           </div>
-          <div
-            className="p-5 mt-10 shadow-md shadow-gray-200 rounded-md"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-          >
-            <div>
-              <Image className="w-1/2 mx-auto" src={web} alt="ui design" />
-            </div>
-            <div className="text-center">
-              <h3 className="font-bold text-orange-800 mb-5">
-                Web Development
-              </h3>
-              <p className="text-lg text-slate-800">
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
-              </p>
-            </div>
-          </div>
-          <div
-            className="p-5 mt-10 shadow-md shadow-gray-200 rounded-md"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          >
-            <div>
-              <Image className="w-1/2 mx-auto" src={app} alt="ui design" />
-            </div>
-            <div className="text-center">
-              <h3 className="font-bold text-orange-800 mb-5">
-                Apps Development
-              </h3>
-              <p className="text-lg text-slate-800">
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
-              </p>
-            </div>
-          </div>
+            ))
+          }
         </div>
       </div>
     </div>
