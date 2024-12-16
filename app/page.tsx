@@ -12,7 +12,7 @@ import Footer from "./_components/footer/Footer";
 function Page() {
   return (
     <>
-      {/* <Header />
+      <Header />
       <Home />
       <About />
       <Services />
@@ -20,7 +20,7 @@ function Page() {
       <Banner />
       <Blogs />
       <Skills />
-      <Contact /> */}
+      <Contact />
       <Footer />
     </>
   );
