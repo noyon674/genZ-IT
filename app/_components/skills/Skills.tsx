@@ -1,10 +1,8 @@
+'use client'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import "swiper/css/autoplay";
 import "swiper/css";
+import "swiper/css/autoplay";
 import { skillsIcon } from "@/app/Data/skill";
 
 function Skills() {

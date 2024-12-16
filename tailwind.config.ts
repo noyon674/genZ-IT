@@ -23,7 +23,6 @@ export default {
       },
       backgroundImage:{
         homeBanner: "url('/Img/homeBanner.jpg')",
-        heroBackground:"url('/image/myself.png')",
         bannerBackground:"url('/image/computer.jpg')"
       }
     },
