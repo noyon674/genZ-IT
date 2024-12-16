@@ -37,7 +37,7 @@ function Footer() {
         </div>
         <div className="flex justify-between md:flex-col md:gap-y-3">
           <a
-            href="image/Noyon_CV.pdf"
+            href="/Img/Noyon-Resume.pdf"
             data-aos="fade-down"
             download={true}
             className="lg:px-10 px-5 py-2 border-2 border-[#009990] rounded-full text-[#009990] transition-all hover:text-white hover:border-white lg:text-xl"

@@ -66,7 +66,7 @@ function Header() {
       {
         <div className="fixed bottom-8 right-8 " data-aos="flip-left">
           <Link
-            href="#home"
+            href="#"
             className="text-xl bg-[#009990] h-12 w-12 flex justify-center items-center rounded-full transition duration-200 ease-in-out"
           >
             <LuArrowUpFromLine />
