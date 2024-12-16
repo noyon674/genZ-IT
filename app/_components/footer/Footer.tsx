@@ -14,10 +14,7 @@ function Footer() {
               </h1>
             </Link>
             <p className="text-lg text-gray-300">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              <br />
-              In voluptatem perspiciatis possimus similique! Ex temporibus ullam
-              laborum obcaecati saepe provident?
+            GenZ.IT offers flexible and tailored software services designed to accelerate growth and drive success.
             </p>
           </div>
           <div className="flex gap-x-4 mt-10">
