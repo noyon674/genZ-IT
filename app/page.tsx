@@ -1,4 +1,3 @@
-'use client'
 import Header from "./_components/header/Header";
 import Home from "./_components/home/Home";
 import About from "./_components/about/About";
@@ -9,7 +8,6 @@ import Skills from "./_components/skills/Skills";
 import Blogs from "./_components/blogs/Blogs";
 import Contact from "./_components/contact/Contact";
 import Footer from "./_components/footer/Footer";
-
 
 function Page() {
   return (
