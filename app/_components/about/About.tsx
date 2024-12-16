@@ -5,11 +5,14 @@ function About() {
   return (
     <div id="about" className="mt-[11vh] lg:h-[90vh] lg:flex items-center">
       <div className=" flex flex-col gap-y-10 lg:gap-y-20 container px-5 md:px-0">
-        <h2 className="text-center text-2xl lg:text-5xl font-semibold uppercase text-[#009990]">
+        <h2
+          className="text-center text-2xl lg:text-5xl font-semibold uppercase text-[#009990]"
+          data-aos="fade-up"
+        >
           About ME
         </h2>
         <div className="lg:grid grid-cols-2 gap-x-10">
-          <div className="mb-5">
+          <div className="mb-5" data-aos="flip-left">
             <Image
               className="w-full rounded-md"
               src={computer}
@@ -17,7 +20,7 @@ function About() {
               placeholder="blur"
             />
           </div>
-          <div className="pb-5 md:pb-0">
+          <div className="pb-5 md:pb-0" data-aos="fade-up">
             <h2 className="text-xl uppercase font-semibold mb-3 lg:text-3xl text-gray-800">
               My Story
             </h2>
