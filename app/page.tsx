@@ -23,15 +23,15 @@ function Page() {
   return (
     <>
       <Header />
-      <Home />
+       <Home />
       <About />
       <Services />
       <Portfolio />
-      <Banner />
+    {/*  <Banner />
       <Blogs />
       <Skills />
      <Contact />
-     <Footer /> 
+     <Footer />  */}
     </>
   )
 }

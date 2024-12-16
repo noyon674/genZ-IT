@@ -1,25 +1,24 @@
 import Image from "next/image";
-import computer from "@/public/image/about.jpg";
+import computer from "@/public/Img/about.jpg";
 
 function About() {
   return (
-    <div id="about" className="">
-      <div className="container py-16 lg:py-24">
-        <h2
-          className="text-center text-2xl mb-5 lg:mb-10 lg:font-semibold"
-          data-aos="zoom-in"
-        >
+    <div id="about" className="mt-[11vh] lg:h-[90vh] lg:flex items-center">
+      <div className=" flex flex-col gap-y-10 lg:gap-y-20 container px-5 md:px-0">
+        <h2 className="text-center text-2xl lg:text-5xl font-semibold uppercase text-[#009990]">
           About ME
         </h2>
-        <div className="lg:grid grid-cols-2 items-center gap-x-16">
-          <div className="px-5 lg:px-0 mb-3" data-aos="fade-up">
-            <Image className="rounded-lg" src={computer} alt="computer" />
+        <div className="lg:grid grid-cols-2 gap-x-10">
+          <div className="mb-5">
+            <Image
+              className="w-full rounded-md"
+              src={computer}
+              alt="about-image"
+              placeholder="blur"
+            />
           </div>
-          <div
-            className="px-5 lg:px-0"
-            data-aos="zoom-in"
-          >
-            <h2 className="text-lg font-semibold mb-3 lg:text-2xl text-gray-800">
+          <div className="pb-5 md:pb-0">
+            <h2 className="text-xl uppercase font-semibold mb-3 lg:text-3xl text-gray-800">
               My Story
             </h2>
             <p className="lg:text-lg">
@@ -30,7 +29,7 @@ function About() {
               nulla nobis aspernatur cumque aut, maiores accusamus praesentium
               sequi ratione quos pariatur.
             </p>
-            <h2 className="text-xl font-semibold text-gray-800 my-3 lg:text-2xl">
+            <h2 className="text-xl font-semibold text-[#009990] my-3 lg:text-2xl">
               I Do Web Design & Development since I was in the First Semester of
               University.
             </h2>

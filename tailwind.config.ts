@@ -7,15 +7,22 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      'roboto': ['Roboto'],
+    },
     container: {
       center: true
     },
     extend: {
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'], // Add your Google Font here
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
       backgroundImage:{
+        homeBanner: "url('/Img/homeBanner.jpg')",
         heroBackground:"url('/image/myself.png')",
         bannerBackground:"url('/image/computer.jpg')"
       }

@@ -1,32 +1,25 @@
-import React from "react";
 import TypeWriter from "../common/TypeWriter";
 import Button from "../common/Button";
-import { IoIosArrowForward } from "react-icons/io";
+
 function Home() {
   return (
-    <div className="bg-[#FF9064] h-[91vh] mt-[55px] lg:mt-[9vh]" id="home">
-      <div className="px-5 lg:px-0 container md:flex justify-between items-center">
-        <div className=" pt-9 md:pt-0 lg:pt-0 basis-2/3" data-aos="fade-right">
-          <p className="pb-5">
-            <span className="px-3 py-2 bg-white text-[#FF9064] rounded-md font-semibold">Hi There</span>
+    <div className="relative bg-homeBanner mt-[10vh] w-full h-[90vh] bg-cover bg-center">
+      <div className="absolute top-0 left-0 w-full h-full text-white flex items-center">
+        <div className="container px-5 md:px-0 lg:pl-[200px]">
+          <p className="mb-5">
+            <span className="text-white rounded-md font-bold lg:text-xl">Hi There,</span>
           </p>
-          <h1 className="text-xl font-semibold text-white md:text-3xl lg:text-6xl">
+          <h1 className="text-xl font-semibold uppercase mb-5 md:text-4xl lg:text-5xl">
             I am Noyon Sarker <br />
-            Software <span className="text-black">
-              <TypeWriter items={["Designer", "Developer", "Engineer", "Content Writer"]} />
+            Software{" "}
+            <span className="text-black">
+              <TypeWriter
+                items={["Designer", "Developer", "Engineer", "Content Writer"]}
+              />
             </span>
-            </h1>
-          <Button style="mt-4 md:text-lg px-5 py-3 rounded bg-black text-white hover:text-[#FF9064] hover:bg-white transition duration-300 ease-in-out flex gap-3 items-center">
-            HIRE ME
-            <span className="animate-pulse">
-              <IoIosArrowForward />
-            </span>
-          </Button>
+          </h1>
+          <Button style="uppercase bg-white py-3 px-5 text-black font-semibold rounded-md hover:text-white hover:bg-black">hire me</Button>
         </div>
-        <div
-          data-aos="fade-left"
-          className="basis-1/3 bg-heroBackground h-[64vh] bg-no-repeat mt-4 md:mt-0 md:h-[91vh] bg-center md:bg-cover"
-        ></div>
       </div>
     </div>
   );

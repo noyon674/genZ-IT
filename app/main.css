@@ -14,3 +14,8 @@ html{
     transition: .3s ease;
     cursor: pointer;
 }
+
+.service-box svg{
+    width: 100%;
+    text-align: center;
+}

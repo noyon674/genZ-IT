@@ -1,43 +1,4 @@
-export const PortfolioImages = [
-    {
-        id: 1,
-        image: "image/food.jpg"
-    },
-    {
-        id: 2,
-        image: "image/project1.jpg"
-    },
-    {
-        id: 3,
-        image: "image/project2.jpg"
-    },
-    {
-        id: 4,
-        image: "image/project3.jpg"
-    },
-    {
-        id: 5,
-        image: "image/project4.jpg"
-    },
-    {
-        id: 8,
-        image: "image/project2.jpg"
-    },
-    {
-        id: 6,
-        image: "image/project5.jpg"
-    },
-    {
-        id: 9,
-        image: "image/food.jpg"
-    },
-    {
-        id: 7,
-        image: "image/project1.jpg"
-    },
-    
-    
-]
+
 
 export const blogs = [
     {
