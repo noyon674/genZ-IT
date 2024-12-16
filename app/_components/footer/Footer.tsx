@@ -20,7 +20,7 @@ function Footer() {
               laborum obcaecati saepe provident?
             </p>
           </div>
-          <div className="flex gap-x-3 mt-10">
+          <div className="flex gap-x-4 mt-10">
             {footerIcon.map((item) => (
               <a
                 data-aos-delay="200"
@@ -28,7 +28,7 @@ function Footer() {
                 key={item.id}
                 href={item.url}
                 target="_blank"
-                className="w-10 h-10 lg:w-14 lg:h-14 lg:text-xl bg-[#00998f49] transition-all transform hover:rotate-180 text-[#009990] flex justify-center items-center rounded-md"
+                className="w-10 h-10 lg:w-14 lg:h-14 lg:text-xl bg-[#00998f49] transition duration-100 ease-in-out text-[#009990] flex justify-center items-center rounded-md hover:rotate-180"
               >
                 <span>{item.icon}</span>
               </a>
